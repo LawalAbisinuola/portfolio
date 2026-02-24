@@ -2,105 +2,314 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Abisinuola Habeebat Lawal | Public Health & Systems Strategy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abisinuola Lawal | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             margin: 0;
-            padding: 0;
-            background: #f4f4f9;
-            color: #333;
+            background-color: #f8fafc;
+            color: #1f2937;
+            line-height: 1.8;
         }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
         header {
-            background: #4f46e5;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-        }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            color: #4f46e5;
-        }
-        .skills, .projects {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 70px;
         }
-        .skill, .project {
-            background: #fff;
-            padding: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            flex: 1 1 200px;
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e5e7eb;
+            background-color: #d1d5db;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #eee;
+
+        .header-text {
+            flex: 1;
         }
-        a {
-            color: #4f46e5;
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 60px;
+            font-size: 1.4rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 22px;
+            background-color: #2563eb;
+            color: white;
             text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 90px;
+            font-size: 0.85rem;
+            color: #6b7280;
+            text-align: center;
+        }
+
+        /* ===== Modal Styles ===== */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #ffffff;
+            margin: 4% auto;
+            width: 85%;
+            height: 85%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .close {
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #444;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .modal-content {
+                width: 95%;
+                height: 90%;
+            }
         }
     </style>
 </head>
+
 <body>
+<div class="container">
 
-    <header>
-        <h1>Abisinuola Lawal</h1>
-        <p>Web Developer | Data Enthusiast | Open to Opportunities</p>
-    </header>
+<header>
+    <img src="Image (3).jpeg" alt="Abisinuola Habeebat Lawal" class="profile-img">
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm Abisinuola, passionate about building web applications and exploring data. I enjoy turning ideas into real-world solutions with clean code and creative design.</p>
-    </section>
+    <div class="header-text">
+        <h1>Abisinuola Habeebat Lawal</h1>
+        <p class="tagline">Public Health Strategy • Data Systems • Program Implementation</p>
 
-    <section>
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">HTML & CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">React</div>
-            <div class="skill">Data Analysis</div>
-        </div>
-    </section>
+        <p>
+            Public health and program management professional with over eight years of
+            experience supporting nationally significant, data-driven health initiatives
+            across complex operational environments.
+        </p>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>My personal portfolio website showcasing my projects and skills.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Data Dashboard</h3>
-                <p>Interactive dashboard for visualizing key metrics using Python and JavaScript.</p>
-                <a href="#">View Project</a>
-            </div>
-        </div>
-    </section>
+        <p>
+            My work integrates institutional data governance, monitoring and evaluation systems,
+            and structured implementation models that strengthen accountability and
+            improve performance at scale.
+        </p>
 
-    <footer>
-        <p>Connect with me on <a href="https://github.com/yourusername" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
-        <p>&copy; 2026 Abisinuola Lawal</p>
-    </footer>
+        <!-- Updated Button -->
+        <button class="button" onclick="openModal()">
+            View Curriculum Vitae
+        </button>
+    </div>
+</header>
+
+
+<section>
+    <h2>Professional Overview</h2>
+
+    <p>
+        I have contributed to large-scale population-based surveys, multi-state
+        implementation environments, and cross-functional program teams operating
+        within structured public health frameworks.
+    </p>
+
+    <p>
+        My expertise lies in aligning data quality systems with operational delivery,
+        ensuring structured oversight, and supporting the translation of evidence
+        into measurable programmatic outcomes.
+    </p>
+
+    <p>
+        Throughout my career, I have worked within collaborative environments
+        involving technical experts, field teams, government stakeholders,
+        and institutional leadership structures.
+    </p>
+</section>
+
+
+<section>
+    <h2>Core Experience</h2>
+
+    <p><strong>Regional Data & Quality Oversight</strong></p>
+    <p>
+        Led structured data quality frameworks across multi-location survey
+        implementation environments. Strengthened compliance monitoring,
+        reporting alignment, and operational coordination mechanisms.
+    </p>
+
+    <p><strong>Monitoring & Evaluation Systems</strong></p>
+    <p>
+        Supported the design and execution of nationally significant health
+        assessments. Contributed to analytical planning, quality assurance
+        systems, and structured reporting processes.
+    </p>
+
+    <p><strong>Field & Clinical Data Operations</strong></p>
+    <p>
+        Supervised real-time data verification processes and supported
+        structured field implementation models within large-scale
+        public health initiatives.
+    </p>
+</section>
+
+
+<section>
+    <h2>Technical & Strategic Focus Areas</h2>
+
+    <p>
+        • Population-Based Survey Implementation<br>
+        • Monitoring, Evaluation & Learning Frameworks<br>
+        • Data Governance & Quality Assurance Systems<br>
+        • Institutional Reporting Structures<br>
+        • Multi-Level Team Coordination<br>
+        • Evidence Translation for Program Improvement
+    </p>
+</section>
+
+
+<section>
+    <h2>Leadership Approach</h2>
+
+    <p>
+        I prioritize clarity, structured systems, and disciplined execution.
+        My approach emphasizes strong process design, collaborative engagement,
+        and continuous improvement within evolving institutional environments.
+    </p>
+
+    <p>
+        I believe sustainable impact is achieved when data integrity,
+        operational alignment, and accountability structures work together
+        to support informed decision-making.
+    </p>
+</section>
+
+
+<section>
+    <h2>Professional Engagement</h2>
+
+    <p>
+        Based in Nigeria and available for national and international
+        engagements, including advisory roles, implementation support,
+        monitoring and evaluation assignments, and institutional systems strengthening.
+    </p>
+</section>
+
+
+<section>
+    <h2>Contact</h2>
+
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn: https://www.linkedin.com/in/yourprofile</p>
+</section>
+
+
+<footer>
+    © 2026 Abisinuola Habeebat Lawal. All rights reserved.
+</footer>
+
+</div>
+
+<!-- ===== Modal Structure ===== -->
+
+<div id="cvModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe src="LAWAL_ABISINUOLA_HABEEBAT_CV.pdf"></iframe>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById("cvModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("cvModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById("cvModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>
